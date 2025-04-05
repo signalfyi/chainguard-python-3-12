@@ -1,1 +1,1 @@
-FROM chainguard/python:latest
+FROM chainguard/python:latest@sha256:fb3e7d0de3245e05df3b16aefd6a0bb250a708201d4fce60f7de17a40121d26f
