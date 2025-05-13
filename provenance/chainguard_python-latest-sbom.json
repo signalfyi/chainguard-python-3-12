@@ -1,0 +1,52 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "version": 1,
+  "metadata": {
+    "tools": [
+      {
+        "name": "trivy",
+        "vendor": "aquasecurity",
+        "version": "unknown"
+      }
+    ],
+    "component": {
+      "name": "chainguard/python",
+      "purl": "pkg:oci/chainguard/python@latest?digest=sha256:ed6a2d722024f3cf86347f8cc6d2b95a9f1894c7ddb84caf97a4b253a0616e5b",
+      "type": "library",
+      "bom-ref": "pkg:oci/chainguard/python@latest?digest=sha256:ed6a2d722024f3cf86347f8cc6d2b95a9f1894c7ddb84caf97a4b253a0616e5b",
+      "version": "latest"
+    },
+    "timestamp": "2025-05-13T10:14:57.885214+00:00"
+  },
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "name": "pkg:oci/python@sha256%3Aed6a2d722024f3cf86347f8cc6d2b95a9f1894c7ddb84caf97a4b253a0616e5b?arch=amd64&repository_url=index.docker.io%2Fchainguard%2Fpython",
+      "type": "library",
+      "bom-ref": "BomRef.7383979696122115.7680739374671951",
+      "version": "unknown"
+    },
+    {
+      "name": "wolfi",
+      "type": "library",
+      "bom-ref": "BomRef.18877877495481088.34706246916209005",
+      "version": "20230201"
+    }
+  ],
+  "specVersion": "1.6",
+  "dependencies": [
+    {
+      "ref": "BomRef.7383979696122115.7680739374671951"
+    },
+    {
+      "ref": "BomRef.18877877495481088.34706246916209005"
+    },
+    {
+      "ref": "pkg:oci/chainguard/python@latest?digest=sha256:ed6a2d722024f3cf86347f8cc6d2b95a9f1894c7ddb84caf97a4b253a0616e5b",
+      "dependsOn": [
+        "BomRef.7383979696122115.7680739374671951"
+      ]
+    }
+  ],
+  "serialNumber": "urn:uuid:88478e2c-9787-44df-a806-434e28f92fec"
+}
